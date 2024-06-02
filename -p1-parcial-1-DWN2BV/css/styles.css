@@ -1,0 +1,144 @@
+/**
+ * Versión 1.0.0
+ */
+ @charset "utf-8";
+
+ /**
+  * Fonts
+  */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+ 
+ /**
+  * Mobile
+  */
+ 
+ /** General */
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+     box-sizing: inherit;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     font-size: 0.8rem;
+     line-height: 1;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+ }
+ 
+
+nav {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: flex-end; /* Alinea los elementos al final (derecha) */
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+}
+
+nav ul li a:hover{
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.container #imagen_tocadiscos img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: auto; /* Centra horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+}
+ /** Footer */
+ footer {
+    
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    margin-top: 2em;
+ }
+ 
+ footer ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     list-style: none;
+ }
+ 
+ footer ul li {
+     font-family: 'Montserrat';
+     font-size: 1.4em;
+     line-height: 1.5;
+     text-align: center;
+ }
+ 
+ footer ul li a {
+     font-family: 'Montserrat';
+     font-size: 1em;
+     text-decoration: none;
+     color: #D0E0E3;
+ }
+ 
+ footer ul li a:hover {
+     color: #a2c4c9;
+ }
+ 
+ /** Overs */
+ main button:hover {
+     opacity: .8;
+ }
+ 
+ /**
+  * Web
+  */
+ @media screen and (min-width: 960px) {
+ 
+     /** Main */
+     main div.galeria {
+         flex-direction: row;
+     }
+ 
+     main div.galeria > img {
+         max-width: 24%;
+         margin: 1em .5%;
+     }
+ 
+     main div.galeria div {
+         align-self: flex-start;
+         width: 30%;
+     }
+ 
+     /** Footer */
+     footer ul {
+         flex-direction: row;
+     }
+ 
+ }
+ 
+ #color-text{
+     color: red
+ }
